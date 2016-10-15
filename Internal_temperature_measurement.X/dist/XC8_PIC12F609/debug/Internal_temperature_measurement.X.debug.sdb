@@ -1,0 +1,167 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12LF1501 ]
+[d frameptr 6 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"10 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"13 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"10 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+"14 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+"44
+[v _getMeasurement getMeasurement `(ui  1 e 2 0 ]
+"54
+[v _calculateTemperature calculateTemperature `(i  1 e 2 0 ]
+"1297 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic12lf1501.h
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1316
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+[s S29 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1360
+[s S33 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S41 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S44 . 1 `S29 1 . 1 0 `S33 1 . 1 0 `S41 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES44  1 e 1 @157 ]
+[s S90 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"1750
+[s S97 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+]
+[u S102 . 1 `S90 1 . 1 0 `S97 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES102  1 e 1 @279 ]
+"13 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+[v main@measuredVal measuredVal `i  1 a 2 34 ]
+"42
+[v main@temperature temperature `i  1 a 2 32 ]
+"49
+} 0
+"44 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\user.c
+[v _getMeasurement getMeasurement `(ui  1 e 2 0 ]
+{
+"48
+[v getMeasurement@val val `i  1 a 2 8 ]
+"47
+[v getMeasurement@highBits highBits `uc  1 a 1 7 ]
+"46
+[v getMeasurement@lowBits lowBits `uc  1 a 1 6 ]
+"52
+} 0
+"54
+[v _calculateTemperature calculateTemperature `(i  1 e 2 0 ]
+{
+"64
+[v calculateTemperature@temperature temperature `d  1 a 3 26 ]
+"63
+[v calculateTemperature@temp temp `d  1 a 3 23 ]
+"59
+[v calculateTemperature@deltaTemp deltaTemp `d  1 a 3 20 ]
+"54
+[v calculateTemperature@value value `i  1 p 2 18 ]
+"69
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 1 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 5 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 0 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 1 ]
+"73
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 13 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 17 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 16 ]
+[v ___ftmul@exp exp `uc  1 a 1 12 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 2 ]
+[v ___ftmul@f2 f2 `f  1 p 3 5 ]
+"157
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 8 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 7 ]
+[v ___ftadd@sign sign `uc  1 a 1 6 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 0 ]
+[v ___ftadd@f2 f2 `f  1 p 3 3 ]
+"148
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 12 ]
+"32
+[v ___awtoft@c c `i  1 p 2 9 ]
+"42
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 1 ]
+[v ___ftpack@exp exp `uc  1 p 1 4 ]
+[v ___ftpack@sign sign `uc  1 p 1 5 ]
+"86
+} 0
+"14 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+{
+"37
+} 0
+"10 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+{
+"13
+} 0
+"10 D:\code\githubrepos\Microchip_PIC12F1501\Internal_temperature_measurement.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"13
+} 0
